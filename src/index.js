@@ -35,6 +35,9 @@ app.use(
     secret: 'your secret line of secretness',
     resave: true,
     saveUninitialized: true,
+    cookie: {
+      maxAge: 60000,
+    },
   })
 );
 
